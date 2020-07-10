@@ -1,0 +1,194 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="hhher" content="true">
+<title>new</title></head>
+<script type="text/javascript">
+
+function fn(){
+    
+    var text=document.getElementById("text").value;
+    var text1=document.getElementById("text1").value;
+    var text2=document.getElementById("text2").value;
+    var text3=document.getElementById("text3").value;
+    if(text1.trim == null){
+        document.getElementById("label").innerHTML="fill No.";
+        document.getElementById("label").style.visibility="visible";
+        return false;
+    }
+    elseif(text.trim == null){
+        document.getElementById("label").innerHTML="fill name";
+        document.getElementById("label").style.visibility="visible";
+        return false;
+    }
+    elseif(text2.trim == null){
+        document.getElementById("label").innerHTML="fill Address";
+        document.getElementById("label").style.visibility="visible";
+        return false;
+    }
+    elseif(text3.trim == null){
+        document.getElementById("label").innerHTML="fill email";
+        document.getElementById("label").style.visibility="visible";
+        return false;
+    }
+         elseif {
+              
+             return true;
+         }
+}
+
+
+
+
+
+</script>
+<style>
+ .menu{
+    
+     width: 35px;
+     height:3px;
+     background-color: blanchedalmond;
+     margin: 6px 0;
+     border: 0px solid silver;
+
+ }
+ @media only screen and(min-width: 260px){
+     body{
+         background-color:black;
+     }
+ }
+</style>
+   
+  
+
+<body>
+    <form method="POST" action="submit.php" onsubmit=" return fn()"> 
+        
+       
+        <div style="text-align: center;height: 350px;background-size: 100% 100% ; background-color: purple;background-image:url(aii.jpeg);background-repeat: no-repeat;">
+           
+            
+            <div style="padding: 5px; width: 38px;height: fit-content;margin-left: 5px;margin-top: 5px;">
+                <button style="background-color:transparent; border: 2px solid silver;">      
+        <div class="menu"></div>
+        <div class="menu"></div>
+        <div class="menu"></div>
+    </div></button><div style="padding: 5px; width: 120px;height: fit-content;margin-left: 90%;">
+        <button style="background-color:transparent; border: 0px;"><label style="font-size: 25px;color: white;background-color: transparent;">Sign in</label>
+        </div></button><br/><div style="padding: 5px; width: 120px;height: fit-content;margin-left: 90%;">
+            <select style="font-size: 25px;color: white;background-color: transparent; border: 0px;">
+        Helpdesk
+    <option value="contact" style="background-color:transparent" >contact</option>
+<option value="landline" style="background-color: transparent;">landline</option></select></div>
+        <h1 style="font-size: 60px;color: white;font-family: 'Times New Roman', Times, serif;font-style: normal;font-weight: bold;" >My registration page</h1></div><br/><br/><br/>
+            
+                <table style="margin-left: 30px;width:90%;border:2px solid gray;background-color:lightgrey;padding: 20px;"><tbody style="border: 2px solid black">
+                <tr><td>
+                    <label style="font-size: 40px;font-weight: normal;font-family: serif;">Student Name</label>
+                </td><td></td>
+                <td style="margin-left: 5px">
+                    <label style="font-size: 40px;font-weight: normal;font-family: serif;">Birth Date</label>
+                </td><td></td></tr>
+                <tr style="margin-top: 5px"><td>
+                    <label style="font-size: 20px;font-weight: normal;font-family: serif;">First Name</label><br/>
+                    <input type="text" style="width: 250px;border: 2px solid silver;height: 33px;color: honeydew;background-color: black;font-size: 25px;"></td>
+                    <td>
+                        <label style="font-size: 20px;font-weight: normal;font-family: serif;">Last Name</label><br/>
+                        <input type="text" style="width: 250px;border: 2px solid silver;height: 33px;color: honeydew;background-color: black;font-size: 25px;"></td>
+                        <td>
+                            <label style="font-size: 20px;font-weight: normal;font-family: serif;">Date of Birth</label><br/>
+                            <input type="date" style="width: 250px;border: 2px solid silver;height: 33px;color: honeydew;background-color: black;font-size: 25px;"></td>
+                           <td></td>
+                </tr>
+            </tbody>
+                </table>
+             <table style="margin-left: 30px;border:2px solid gray;margin-top: 5px;width:90%;background-color:lightgrey;padding: 20px;"><tbody>
+               <tr>
+                   <td>
+                    <label style="font-size: 40px;font-weight: normal;font-family: serif;">Gender</label>
+                   </td>
+                   <td>
+                    <label style="font-size: 40px;font-weight: normal;font-family: serif;">Mob No.</label>
+                   </td>
+               </tr><tr>
+                   <td>
+                       <select name="gender" id="gen" style="width: 250px;border: 2px solid silver;height: 33px;color: honeydew;background-color: black;font-size: 25px;">
+                           <option value="Male">Male</option>
+                           <option value="Female">Female</option>
+                           <option value="other">Other</option>
+                       </select>
+                   </td><td>
+                    <input name="callNo" id="text1" type="number" placeholder="mob No." required style="width: 250px;border: 2px solid silver;height: 33px;color: honeydew;background-color: black;font-size: 25px;font-style: italic;"></td>
+                   
+
+               </tr>  
+             </tbody></table>
+            <table style="margin-left: 30px;border:2px solid gray;margin-top: 5px;width:90%;background-color:lightgrey;padding: 20px;"><tbody>
+                    <tr>
+                        <td>
+                            <label style="font-size: 40px;font-weight: normal;font-family: serif;">Organization</label>
+                        </td>
+                        <td>
+                            <label style="font-size: 40px;font-weight: normal;font-family: serif;">Email</label>
+                        </td>
+                        <td>
+                            <label style="font-size: 40px;font-weight: normal;font-family: serif;"> Any Experience</label>
+                        </td>
+                    </tr><tr><td>
+                        <input type="text" style="width: 250px;border: 2px solid silver;height: 33px;color: honeydew;background-color: black;font-size: 25px;"></td>
+                        <td><input type="email" placeholder="email" required style="width: 250px;border: 2px solid silver;height: 33px;color: honeydew;background-color: black;font-size: 25px;"></td>
+                   <td>
+                    <label style="font-size: 20px;font-weight: normal;font-family: serif;">In years</label><br/>
+                    <input type="number" style="width: 250px;border: 2px solid silver;height: 33px;color: honeydew;background-color: black;font-size: 25px;"></td>
+                
+
+                    </tr>
+            </tbody></table>
+            <table style="margin-left: 30px;border:2px solid gray;margin-top: 5px;width:90%;background-color:lightgrey;padding: 20px;"><tbody>
+                <tr>
+                    <td>
+                        <label style="font-size: 40px;font-weight: normal;font-family: serif;">Address</label>
+                    </td>
+                   
+                </tr>
+                <tr>
+                    <td>
+                        <label style="font-size: 20px;font-weight: normal;font-family: serif;">address line 1</label><br/>
+                        <input type="text" style="width: 500px;border: 2px solid silver;height: 33px;color: honeydew;background-color: black;font-size: 25px;">
+                        </td>
+                        <td>
+                            <label style="font-size: 20px;font-weight: normal;font-family: serif;">address line 2</label><br/>
+                            <input type="text" style="width: 500px;border: 2px solid silver;height: 33px;color: honeydew;background-color: black;font-size: 25px;"></td>
+                    <td></td>
+                </tr><tr>
+                    <td>
+                        <label style="font-size: 20px;font-weight: normal;font-family: serif;">City</label>
+                        <label style="font-size: 20px;margin-left: 195px;font-weight: normal;font-family: serif;">State</label><br/>
+                        <input type="text" style="width: 200px;border: 2px solid silver;height: 33px;color: honeydew;background-color: black;font-size: 25px;">
+                        
+                            
+                            <input type="text" style="width: 200px;margin-left: 30px;border: 2px solid silver;height: 33px;color: honeydew;background-color: black;font-size: 25px;"></td>
+                            <td>
+                                <label style="font-size: 20px;font-weight: normal;font-family: serif;">City</label>
+                                <label style="font-size: 20px;margin-left: 195px;font-weight: normal;font-family: serif;">State</label><br/>
+                                <input type="text" style="width: 200px;border: 2px solid silver;height: 33px;color: honeydew;background-color: black;font-size: 25px;">
+                                
+                                    
+                                    <input type="text" style="width: 200px;margin-left: 30px;border: 2px solid silver;height: 33px;color: honeydew;background-color: black;font-size: 25px;"></td>
+                    
+                </tr>
+            </tbody>
+        </table>
+        
+       
+       
+   <br>
+   <button type="submit" id="btn1">submit</button>
+   <br>
+   <label id="label" style="color: red,visibility: hidden";>invalid</label>
+   
+</form>
+    
+</body>
+</html>
